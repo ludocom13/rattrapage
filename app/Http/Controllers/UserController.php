@@ -42,8 +42,6 @@ if (Auth::attempt($credentials)) {  $request->session()->regenerate();
     }
 else return 
 view("/admin/erreur");
-           
-
-
     }
+    
 }

@@ -54,8 +54,7 @@ class ParticipantController extends Controller
 
         return
             view("user/participants_list", ["participants"=>$participants]);
-    }
-           
+    }         
 }
 
             

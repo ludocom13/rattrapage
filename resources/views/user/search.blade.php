@@ -9,7 +9,7 @@
    
  <!--Résultat de la recherche avec un foreach sur la variable $q-->  
    
-                    <div  >
+                    <div class="modif">
                     @foreach($q as $key => $value)
 
                     <h2><span> Adresse Email : </span>{{$value->email}}</h2>

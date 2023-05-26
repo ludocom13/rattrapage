@@ -44,8 +44,9 @@ li{
 }
 div.chef{
    background-color: rgb(81, 183, 85);
-   height:auto;display: flex;
-   width: max-content;
+   height:auto;;
+   width: 100%;
+
 }
 h1.login{
     text-align: center;
@@ -121,3 +122,4 @@ span.num{
 }
 div.forming{text-align: center;
 margin-left: 39.3%;}
+

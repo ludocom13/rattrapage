@@ -30,9 +30,9 @@ Route::any('/search', function () {
    
     $q = Request::input('q');
     $participant = Participant::where('email', 'LIKE', '%'.$q.'%')->get();
-    if(count($participant) > 0) {
-        return view('user/search',["q"=>$participant]);
-    } else {
-        return view("user/seracherror");
+if(count($participant) > 0) {
+    return view('user/search', ["q"=>$participant]);
+} else {
+        return view("user/searcherror");
     }
 });
