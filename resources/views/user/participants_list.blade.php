@@ -22,26 +22,38 @@
 @endsection
 
 @section('content')
-<div class="chef">
+
 
 <!--Liste des participants afficher avec un foreach sur $participants-->
 
 <p>@foreach($participants as $key => $value)</p>
-<div class="reponses">
-    <div class="divemail" >
-        <h2>{{$value->email}}</h2>
-    </div>
+
+<table>
+    <thead">
+        <tr >
+            <th style="border:solid;background-color:darkseagreen;">{{$value->email}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="display: block;height:max-content;background-color:lavender;width:400px">
+            <td style="background-color:bisque;">{{$value->Q1}}</td>
+            <td>{{$value->Q2}}</td>
+            <td style="background-color:bisque;">{{$value->Q3}}</td>
+            <td>{{$value->Q4}}</td>
+            <td style="background-color:bisque;">{{$value->Q5}}</td>
+            <td>{{$value->Q6}}</td>
+        </tr>
+    </tbody>
+    </table>
+       
+   
     
-    <p>1. {{$value->Q1}}</p>
-    <p>2. {{$value->Q2}}</p>
-    <p>3. {{$value->Q3}}</p>
-    <p>4. {{$value->Q4}}</p>
-    <p>5. {{$value->Q5}}</p>
-    <p>6. {{$value->Q6}}</p>
-    
-</div>@endforeach
-      @endsection
-</div>
+@endforeach 
+@endsection
+
+
+      
+
 
 
     
